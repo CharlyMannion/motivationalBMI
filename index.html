@@ -2,12 +2,13 @@
 <html>
 <title>Motivational BMI</title>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="theme.css">
+<!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
   <head>
     <meta charset="utf-8">
-    <script src="jasmine-standalone-3.2.1/src/calculator.js"></script>
+    <script src="src/calculator.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="interface.js"></script> -->
+    <script src="result.html"></script>
+    <script src="interface.js"></script>
   </head>
 
 <div>
@@ -19,11 +20,22 @@
   
   <body>
     <class="controls">
-    <section>
+    <form> 
+      <!-- action="/result.html"> -->
+      Enter your height in metres:<br>
+      <input type="text" name="formInputHeight" value="1.71">
+      <br>
+      Enter your weight in kilograms:<br>
+      <input type="text" name="formInputWeight" value="42">
+      <br><br>
+      <button id="submit">Calculate BMI</button>
+      <!-- <input type="submit" value="Submit"> -->
+    </form>
+    <!-- <section>
       <p>
         <button id="calculateBMI">Calculate BMI</button>
       </p>
-    </section>
+    </section> -->
     <section>
       <p>
         <h4 id="result">BMI: </h4>
