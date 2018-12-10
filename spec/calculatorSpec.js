@@ -13,5 +13,19 @@ describe("Calculator", function() {
         })
     })
 
+    describe("the function to set the height value", function() {
+        it("sets the height to the given value", function(){
+            calculator.setHeight(171);
+            expect(calculator.height).toEqual(171)
+        })
+    })
+
+    describe("the function to set the weight value", function() {
+        it("sets the height to the given value", function(){
+            calculator.setWeight(40);
+            expect(calculator.weight).toEqual(40)
+        })
+    })
+
 
 })
