@@ -14,8 +14,6 @@ Calculator.prototype.setWeight = function(givenWeight) {
 
 Calculator.prototype.calculateBMI = function() {
     var heightSquared = Math.pow(this.height, 2)
-    console.log(heightSquared)
     var fullBMI = this.weight / heightSquared
     this.BMI = fullBMI.toFixed(2)
-    console.log(this.BMI)
 }
