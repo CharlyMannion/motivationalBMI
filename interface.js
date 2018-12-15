@@ -1,7 +1,14 @@
 $( document ).ready(function() {
     var calculator = new Calculator();
 
-    $("#result").hide();
+    $("#submit").on('click', (function(){
+        var inputHeight = $('#formInputHeight').val();
+        var inputWeight = $('#formInputWeight').val();
+        calculator.setHeight(inputHeight);
+        calculator.setWeight(inputWeight);
+        calculator.calculateBMI();
+        $("#result").text(calculator.BMI);
+    }));
 
     // $("#cerealOptions").hide();
     // $("#cerealOptions").text(menu.displayCerealOptions());
@@ -10,7 +17,4 @@ $( document ).ready(function() {
         location.reload();
     });
 
-    $("#submit").on('click', (function(){
-        $("#result").show();
-    }));
 });
