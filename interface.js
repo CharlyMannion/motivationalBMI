@@ -1,19 +1,5 @@
-// function UpdateUi(calculator){
-
-//     $("#inputedHeight").text(calculator.height); 
-//     $("#inputedWeight").text(calculator.weight);
-//     $("#result").text(calculator.BMI);
-
-//   }
-
 $( document ).ready(function() {
     var calculator = new Calculator();
-
-    // UpdateUi(calculator);
-
-    // $("#inputedHeight").text(calculator.height); 
-    // $("#inputedWeight").text(calculator.weight);
-    // $("#result").text(calculator.BMI);
 
     $("#calculateBMI").on('click', (function(e){
         e.preventDefault();
@@ -26,7 +12,6 @@ $( document ).ready(function() {
         $("#inputedWeight").text(calculator.weight);
         calculator.calculateBMI();
         $("#result").text(calculator.BMI);
-        // UpdateUi(calculator);
     }));
 
     $('#resetPage').click(function() {
