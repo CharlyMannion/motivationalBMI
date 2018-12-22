@@ -5,7 +5,6 @@ $( document ).ready(function() {
         e.preventDefault();
         var inputHeight = $('#formInputHeight').val();
         calculator.setHeight(inputHeight);
-        console.log(calculator.height);
         $("#inputedHeight").text(inputHeight);
         var inputWeight = $('#formInputWeight').val();
         calculator.setWeight(inputWeight);
