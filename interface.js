@@ -15,9 +15,11 @@ $( document ).ready(function() {
     // $("#inputedWeight").text(calculator.weight);
     // $("#result").text(calculator.BMI);
 
-    $("#calculateBMI").on('click', (function(){
+    $("#calculateBMI").on('click', (function(e){
+        e.preventDefault();
         var inputHeight = $('#formInputHeight').val();
         calculator.setHeight(inputHeight);
+        console.log(calculator.height);
         $("#inputedHeight").text(inputHeight);
         var inputWeight = $('#formInputWeight').val();
         calculator.setWeight(inputWeight);
